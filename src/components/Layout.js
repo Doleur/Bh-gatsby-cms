@@ -49,9 +49,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div>
-        <div style="color: green"> TEST </div>
-        {children}</div>
+      <div>{children}</div>
       <Footer />
     </div>
   );

@@ -8,6 +8,12 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
+import styled from "styled-components"
+
+const Test = styled.h3`
+  color: red;
+`
+
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
@@ -28,13 +34,13 @@ export const IndexPageTemplate = ({
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
+                <div>
+                  <div>
                     <div className="tile">
                       <h1 className="title">{mainpitch.title}</h1>
                     </div>
                     <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
+                      <Test>{mainpitch.description}</Test>
                     </div>
                   </div>
                   <div className="columns">
